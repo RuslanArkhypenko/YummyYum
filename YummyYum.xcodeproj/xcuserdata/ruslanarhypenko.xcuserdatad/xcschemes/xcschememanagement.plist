@@ -7,7 +7,25 @@
 		<key>YummyYum.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B1B603BB221B36A800B23E00</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1B603CF221B36AB00B23E00</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1B603DA221B36AB00B23E00</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
