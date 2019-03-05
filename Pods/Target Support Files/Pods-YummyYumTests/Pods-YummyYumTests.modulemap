@@ -1,0 +1,6 @@
+framework module Pods_YummyYumTests {
+  umbrella header "Pods-YummyYumTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
