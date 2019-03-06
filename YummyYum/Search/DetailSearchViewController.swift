@@ -30,13 +30,9 @@ class DetailSearchViewController: UIViewController, SFSafariViewControllerDelega
         super.viewDidLoad()
         self.title = "Recipe"
         UNUserNotificationCenter.current().delegate = self
+        navigationItem.largeTitleDisplayMode = .never
         addBarButtonItem()
         getRecipesFromAPI(with: self.recipeID)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     func addBarButtonItem() {
@@ -61,7 +57,7 @@ class DetailSearchViewController: UIViewController, SFSafariViewControllerDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeInfoCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailSearchCell", for: indexPath)
         return cell
     }
     

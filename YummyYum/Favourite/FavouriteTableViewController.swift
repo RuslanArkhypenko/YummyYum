@@ -16,16 +16,8 @@ class FavouriteTableViewController: UITableViewController, NSFetchedResultsContr
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.clearsSelectionOnViewWillAppear = false
+        self.clearsSelectionOnViewWillAppear = true
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.navigationBar.prefersLargeTitles = true
-    }
-
     // MARK: - Table View
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -78,6 +70,25 @@ class FavouriteTableViewController: UITableViewController, NSFetchedResultsContr
         cell.recipeName.text = recipe.name
         cell.recipeImage.image = UIImage(data: recipe.image! as Data)
     }
+    
+    // MARK: - Segues
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let object = fetchedResultsController.object(at: indexPath)
+                let detailFavouriteViewController = segue.destination as! DetailFavouriteViewController
+                detailFavouriteViewController.recipe = object            
+        }
+    }
+    
+    // MARK: - Navigation
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let indexPath = tableView.indexPathForSelectedRow!
+//        let detailSearchViewController = segue.destination as! DetailSearchViewController
+//        detailSearchViewController.recipeID = self.recipes[indexPath.row].id
+//    }
 
     // MARK: - Fetched results controller
     

@@ -25,14 +25,8 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.clearsSelectionOnViewWillAppear = true
-
         setupSearchController()
         setupTitleViewGestureRecognizer()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     func setupSearchController() {
@@ -67,6 +61,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         let recipe = self.recipes[indexPath.row]
         cell.recipeName.text = recipe.name
         cell.rating.text = "\(recipe.rating!)"
+        cell.recipeImage.image = UIImage(named: "Logo.png")
         
         if (recipe.image != nil) {
             cell.recipeImage.image = recipe.image

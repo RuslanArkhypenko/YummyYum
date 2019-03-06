@@ -33,6 +33,7 @@
 		B1B60400221E00BF00B23E00 /* SearchRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B603FF221E00BF00B23E00 /* SearchRecipe.swift */; };
 		B1C40ACA2220C52300994890 /* NoRecipesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C40AC92220C52300994890 /* NoRecipesView.xib */; };
 		B1C40ACC2220C54600994890 /* NoRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C40ACB2220C54500994890 /* NoRecipesView.swift */; };
+		B1D2A0DD223074BE00CE2730 /* DetailFavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D2A0DC223074BE00CE2730 /* DetailFavouriteViewController.swift */; };
 		B1DFA09422208D2900F47277 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DFA09322208D2900F47277 /* CardView.swift */; };
 		EC8E77D3BAC020ECAE0D5F34 /* Pods_YummyYumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A72B6DA74B48A373A7356B /* Pods_YummyYumUITests.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +93,7 @@
 		B1B603FF221E00BF00B23E00 /* SearchRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipe.swift; sourceTree = "<group>"; };
 		B1C40AC92220C52300994890 /* NoRecipesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoRecipesView.xib; sourceTree = "<group>"; };
 		B1C40ACB2220C54500994890 /* NoRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoRecipesView.swift; sourceTree = "<group>"; };
+		B1D2A0DC223074BE00CE2730 /* DetailFavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFavouriteViewController.swift; sourceTree = "<group>"; };
 		B1DFA09322208D2900F47277 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C8A72B6DA74B48A373A7356B /* Pods_YummyYumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YummyYumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E255F00833D4099F5D4E4579 /* Pods-YummyYum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YummyYum.release.xcconfig"; path = "Target Support Files/Pods-YummyYum/Pods-YummyYum.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				B118D6622228AF42001459E9 /* FavouriteTableViewController.swift */,
 				B158EC78222AD7E300B8F9AC /* FavouriteRecipeTableViewCell.swift */,
+				B1D2A0DC223074BE00CE2730 /* DetailFavouriteViewController.swift */,
 			);
 			path = Favourite;
 			sourceTree = "<group>";
@@ -196,8 +199,8 @@
 				B1B603C6221B36AB00B23E00 /* Assets.xcassets */,
 				B1B603C8221B36AB00B23E00 /* LaunchScreen.storyboard */,
 				B1B603CB221B36AB00B23E00 /* Info.plist */,
-				B118D6612228AF26001459E9 /* Favourite */,
 				B1B603FC221DFFC200B23E00 /* Search */,
+				B118D6612228AF26001459E9 /* Favourite */,
 				B1B603FB221DFFA100B23E00 /* Settings */,
 				B1D2A0DB222DDB5600CE2730 /* CardView */,
 				B1C40ACD2220C55700994890 /* NoRecipesView */,
@@ -521,6 +524,7 @@
 				B1C40ACC2220C54600994890 /* NoRecipesView.swift in Sources */,
 				B1B60400221E00BF00B23E00 /* SearchRecipe.swift in Sources */,
 				B158EC6F222ACD8600B8F9AC /* CoreDataManager.swift in Sources */,
+				B1D2A0DD223074BE00CE2730 /* DetailFavouriteViewController.swift in Sources */,
 				B158EC77222ACDE400B8F9AC /* RecipeCoreData+CoreDataProperties.swift in Sources */,
 				B118D66522295575001459E9 /* DetailSearchViewController.swift in Sources */,
 			);
