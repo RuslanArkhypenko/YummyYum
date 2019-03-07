@@ -1,4 +1,4 @@
-# Still in development
+# In development
 
 YummyYum - an application which help you to find recipes.
 
